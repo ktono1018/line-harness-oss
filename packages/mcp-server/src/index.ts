@@ -27,7 +27,7 @@ registerAllResources(server);
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("L Harness MCP Server running on stdio");
+  console.error("PostyLoop MCP Server running on stdio");
 }
 
 main().catch((error) => {

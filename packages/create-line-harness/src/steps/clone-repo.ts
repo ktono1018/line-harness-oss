@@ -155,7 +155,7 @@ export async function ensureRepo(repoDir: string | null): Promise<string> {
 
   // Clone fresh
   const s = p.spinner();
-  s.start("L Harness をダウンロード中...");
+  s.start("PostyLoop をダウンロード中...");
 
   try {
     await execa("git", ["clone", "--depth", "1", REPO_URL, homeDir]);
